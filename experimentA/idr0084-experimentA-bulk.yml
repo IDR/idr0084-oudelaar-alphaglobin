@@ -11,4 +11,3 @@ parallel_fileset: "8"
 columns:
   - target
   - path
-  - name
