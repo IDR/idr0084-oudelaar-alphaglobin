@@ -1,0 +1,101 @@
+---
+name: idr0084-oudelaar-alphaglobin/experimentA
+version: 1
+
+defaults:
+  include: no
+  type: string
+  includeclient: yes
+  visible: yes
+  omitempty: yes
+
+columns:
+
+  - name: Experimental Condition [Cell Population]
+    clientname: Cell Population
+    include: yes
+
+  - name: Experimental Condition [Expt Date]
+    clientname: Expt Date
+    include: yes
+
+  - name: Comment [Gene Annotation Comments]
+    clientname: Gene Annotation Comments
+    include: yes
+
+  - name: Comment [RNA FISH Probe]
+    clientname: RNA FISH Probe
+    include: yes
+
+  - name: RNA FISH Probe 1
+    clientname: RNA FISH Probe 1
+    include: yes
+
+  - name: RNA FISH Probe 2
+    clientname: RNA FISH Probe 2
+    include: yes
+
+  - name: RNA FISH Probe 3
+    clientname: RNA FISH Probe 3
+    include: yes
+
+  - name: RNA FISH Probe 4
+    clientname: RNA FISH Probe 4
+    include: yes
+
+  - name: Genomic Locations Probe 1
+    clientname: Genomic Locations Probe 1
+    include: yes
+
+  - name: Genomic Locations Probe 2
+    clientname: Genomic Locations Probe 2
+    include: yes
+
+  - name: Genomic Locations Probe 3
+    clientname: Genomic Locations Probe 3
+    include: yes
+
+  - name: Genomic Locations Probe 4
+    clientname: Genomic Locations Probe 4
+    include: yes
+
+  - name: Comment [Image File Comments]
+    clientname: Image File Comments
+    include: yes
+
+
+  ######################################################################
+  # mapr groups
+  ######################################################################
+
+  - group:
+      namespace: openmicroscopy.org/mapr/organism
+      columns:
+        - name: Characteristics [Organism]
+          clientname: Organism
+          include: yes
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene
+      columns:
+        - name: Comment [Gene Identifier]
+          clientname: Gene Identifier
+          include: yes
+        - name: Comment [Gene Identifier]
+          clientname: Gene Identifier URL
+          clientvalue: http://www.ensembl.org/id/{{ value|urlencode }}
+          include: yes
+        - name: Comment [Gene Symbol]
+          clientname: Gene Symbol
+          include: yes
+
+
+advanced:
+  ignore_missing_primary_key: yes
+  primary_group_keys:
+    - namespace: openmicroscopy.org/mapr/organism
+      keys:
+        - Organism
+    - namespace: openmicroscopy.org/mapr/cell_line
+      keys:
+      - Cell Line
