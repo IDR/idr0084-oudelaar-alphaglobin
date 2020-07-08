@@ -63,6 +63,10 @@ columns:
     clientname: Cells in Image
     include: yes
 
+  - name: Channels
+    clientname: Channels
+    include: yes
+
 
   ######################################################################
   # mapr groups
