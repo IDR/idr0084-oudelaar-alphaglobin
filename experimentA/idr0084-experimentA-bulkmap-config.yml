@@ -59,8 +59,8 @@ columns:
     clientname: Genomic Locations Probe 4
     include: yes
 
-  - name: Comment [Image File Comments]
-    clientname: Image File Comments
+  - name: Comment [Cells in Image]
+    clientname: Cells in Image
     include: yes
 
 
