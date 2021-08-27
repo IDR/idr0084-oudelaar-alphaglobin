@@ -2,9 +2,9 @@
 # STUDY DESCRIPTION SECTION	
 Comment[IDR Study Accession]	idr0084
 Study Title	Activation of alpha-globin transcription in primary mouse erythroid progenitors
-Study Type	in-situ hybridization assay
-Study Type Term Source REF	EFO
-Study Type Term Accession	OBI_0001686
+Study Type	fluorescence in situ hybridization
+Study Type Term Source REF	NCIT
+Study Type Term Accession	NCIT_C17563
 Study Description	Mammalian gene expression patterns are controlled by regulatory elements, which interact within Topologically Associating Domains (TADs). The relationship between activation of regulatory elements, formation of structural chromatin interactions and gene expression during development is unclear. Here, we present Tiled-C, a low-input Chromosome Conformation Capture (3C) technique. We use this approach to study chromatin architecture at high spatial and temporal resolution through in vivo mouse erythroid differentiation. In this dataset, we measure nascent transcription of the mouse alpha-globin genes by FISH using oligonucleotide probes that are specific for the alpha-globin introns. We measure the initial stages of alpha-globin upregulation in three subsets of early erythroid progenitors (S0-low, S0-medium and S1) and compare these to the levels observed in a positive control (mature, Ter119+ mouse erythroblasts) and in two negative controls (mouse primary brain, which does not express alpha-globin, and a no primary antibody control).
 Study Key Words	haemoglobin	alpha-globin	RNA-FISH	transcriptional regulation
 Study Organism	Mus musculus
